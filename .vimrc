@@ -15,8 +15,13 @@ Plugin 'scrooloose/syntastic'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'vim-airline/vim-airline'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
 Plugin 'valloric/youcompleteme'
-Plugin 'sainnhe/gruvbox-material'
+Plugin 'mattn/emmet-vim'
+Plugin 'neoclide/coc.nvim'
+Plugin 'dracula/vim', { 'name': 'dracula' }
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -49,5 +54,4 @@ set softtabstop=2
 set undolevels=1000	
 set background=dark
 set backspace=indent,eol,start	
-let g:airline_theme = 'gruvbox_material'
-colorscheme gruvbox-material
+colorscheme dracula
