@@ -1,34 +1,20 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
-
-" set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/nerdtree'
+Plugin 'majutsushi/tagbar'
+Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/syntastic'
 Plugin 'jiangmiao/auto-pairs'
-Plugin 'vim-airline/vim-airline'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'tpope/vim-fugitive'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'valloric/youcompleteme'
-Plugin 'mattn/emmet-vim'
-Plugin 'neoclide/coc.nvim'
-Plugin 'dracula/vim', { 'name': 'dracula' }
+Plugin 'morhetz/gruvbox'
+Plugin 'valloric/youcompleteme' 
 
-" All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
 " Brief help
 " :PluginList       - lists configured plugins
 " :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
@@ -37,21 +23,21 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
-set number	
-set linebreak	
-set showbreak=+++ 	
-set textwidth=100	
-set showmatch	
-set hlsearch	
-set smartcase	
-set ignorecase	
-set incsearch	
-set autoindent	
-set shiftwidth=2	
-set smartindent	
-set smarttab	
-set softtabstop=2	
-set undolevels=1000	
+set number
+set linebreak
+set showbreak=+++
+set textwidth=100
+set showmatch
+set hlsearch
+set smartcase
+set ignorecase
+set incsearch
+set autoindent
+set shiftwidth=2
+set smartindent
+set smarttab
+set softtabstop=2
+set undolevels=1000
 set background=dark
-set backspace=indent,eol,start	
-colorscheme dracula
+set backspace=indent,eol,start
+colorscheme gruvbox 
