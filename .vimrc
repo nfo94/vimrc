@@ -9,6 +9,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/syntastic'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'chiendo97/intellij.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -29,3 +30,5 @@ set smarttab
 set softtabstop=2
 set undolevels=1000
 set backspace=indent,eol,start
+set background=light
+colorscheme intellij
